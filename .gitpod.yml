@@ -7,7 +7,5 @@
 
 tasks:
   - before: corepack enable && corepack prepare pnpm@7.33.3 --activate
-    init: pnpm install && pnpm run build
-  - command: pnpm run watch
-
-
+    init: npm i -g pnpm && npm install @prisma/client && npx prisma generate
+  #- command: pnpm run watch
